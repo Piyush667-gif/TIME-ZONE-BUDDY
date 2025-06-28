@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZoneBuddy - Find Perfect Meeting Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 TimeZoneBuddy</h1>
+            <p>Find the perfect meeting time across different time zones</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Add Participants</h2>
+                <div class="city-input-container">
+                    <input type="text" id="cityInput" placeholder="Enter city name (e.g., New York, London, Tokyo)" />
+                    <button id="addCityBtn">Add City</button>
+                </div>
+                
+                <div id="cityList" class="city-list"></div>
+                
+                <button id="findMeetingBtn" class="find-meeting-btn" disabled>
+                    Find Meeting Times
+                </button>
+            </div>
+
+            <div id="resultsSection" class="results-section" style="display: none;">
+                <h2>Meeting Time Suggestions</h2>
+                
+                <div id="commonWindows" class="common-windows">
+                    <h3>Available Time Windows</h3>
+                    <div id="windowsList"></div>
+                </div>
+
+                <div id="suggestedTimes" class="suggested-times">
+                    <h3>Suggested Meeting Times</h3>
+                    <div id="timesList"></div>
+                </div>
+
+                <div id="participantTimes" class="participant-times">
+                    <h3>Times for Each Participant</h3>
+                    <div id="participantsList"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
